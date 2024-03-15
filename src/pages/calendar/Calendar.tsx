@@ -9,11 +9,11 @@ function Cal(): JSX.Element {
   const [notes, setNotes] = useState<{ [key: string]: string }>({});
   const [showCalendar, setShowCalendar] = useState<boolean>(false);
 
-  const onChangeDate = (date: Date): void => {
-    setDate(date);
-    setNote(notes[date.toDateString()] || "");
-    setShowCalendar(false);
-  };
+  // const onChangeDate = (date: Date): void => {
+  //   setDate(date);
+  //   setNote(notes[date.toDateString()] || "");
+  //   setShowCalendar(false);
+  // };
 
   const handleNoteChange = (
     event: React.ChangeEvent<HTMLTextAreaElement>
@@ -30,10 +30,10 @@ function Cal(): JSX.Element {
     setNote("");
   };
 
-  const onLowerCalendarChange = (date: Date): void => {
-    setDate(date);
-    setNote(notes[date.toDateString()] || "");
-  };
+  // const onLowerCalendarChange = (date: Date): void => {
+  //   setDate(date);
+  //   setNote(notes[date.toDateString()] || "");
+  // };
 
   return (
     <div className="container mx-auto mt-8">
@@ -63,8 +63,8 @@ function Cal(): JSX.Element {
                 <div className="absolute z-10 mt-2">
                   <Calendar
                     value={date}
-                    onChange={onChangeDate}
-                    className="rounded-lg border border-gray-300 shadow-lg"
+                    // onChange={onChangeDate}
+                    className="rounded-lg border border-gray-300 shadow-lg text-black"
                   />
                 </div>
               )}
@@ -90,7 +90,7 @@ function Cal(): JSX.Element {
                   {date.toDateString() === currentDateString && (
                     <div className="absolute bottom-0 right-0 left-0">
                       <textarea
-                        className="w-full h-full bg-gray-100 border border-gray-300 rounded p-1 resize-none"
+                        className="w-full h-full bg-gray-100 border border-gray-300 rounded p-1 resize-none text-black"
                         value={note}
                         onChange={handleNoteChange}
                         placeholder={
@@ -100,7 +100,7 @@ function Cal(): JSX.Element {
                     </div>
                   )}
                   {notes[currentDateString] && (
-                    <div className="absolute bottom-0 right-0 left-0 mt-2 p-2 bg-gray-100 rounded">
+                    <div className="absolute bottom-0 right-0 left-0 mt-2 p-2 bg-gray-100 rounded text-black">
                       {notes[currentDateString]}
                     </div>
                   )}

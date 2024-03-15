@@ -118,14 +118,14 @@ export const topDealUsers = [
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkRRwdLG7XpyDGpgQaJDdi6bIEXOEQtwwUNg&usqp=CAU",
     userName: "Prabal Pratap",
     email: "prabal@example.com",
-    amount: "8000",
+    amount: "80000",
   },
   {
     id: 5,
-    img: "https://static.wikia.nocookie.net/jujutsu-kaisen/images/5/5a/Satoru_Gojo_arrives_on_the_battlefield_%28Anime%29.png/revision/latest?cb=20210226205256",
+    img: "https://ibb.co/kD6Zfw9",
     userName: "Rohan Saturo",
     email: "Rohan@example.com",
-    amount: "7800",
+    amount: "980000",
   },
   {
     id: 6,

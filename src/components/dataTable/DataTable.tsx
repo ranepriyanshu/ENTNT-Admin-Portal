@@ -43,7 +43,7 @@ const DataTable = (props: Props) => {
           </Link>
           <div
             className="delete"
-            onClick={(e) => {
+            onClick={() => {
               // console.log(e);
 
               handleDelete(params.row.id);

@@ -122,10 +122,10 @@ export const topDealUsers = [
   },
   {
     id: 5,
-    img: "https://ibb.co/kD6Zfw9",
+    img: "https://i.ibb.co/pKrq8MR/jujutsu-kaisen-satoru-gojo-anime-boys-anime-girls-hd-wallpaper-preview.jpg",
     userName: "Rohan Saturo",
     email: "Rohan@example.com",
-    amount: "980000",
+    amount: "98000",
   },
   {
     id: 6,
